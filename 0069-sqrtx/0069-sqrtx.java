@@ -2,9 +2,9 @@
 class Solution {
     public int mySqrt(int x) {
         long i;
-        long r=x;
-       for( i=0;i<=r/2+1;i++){
-           if(i*i>r)
+        
+       for( i=0;i<=x/2+1;i++){
+           if(i*i>x)
             return (int)i-1;
        }
       return (int)i-1;  
