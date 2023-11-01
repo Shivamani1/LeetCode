@@ -11,15 +11,13 @@ class Solution {
             map.put(i,c);
         }
         }
-          ArrayList<Integer> arr=new ArrayList<>();
-
+        c=0;
+        int a[]=new int[2];
          for(Map.Entry<Integer,Integer> m:map.entrySet())
             if(m.getValue()==1)
-                arr.add(m.getKey());
-        int a[]=new int[arr.size()];
-        c=0;
-        for(int i:arr)
-            a[c++]=i;
+                a[c++]=m.getKey();
+        
+       
         return a;
         
     }
