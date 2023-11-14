@@ -1,5 +1,6 @@
 class Solution {
     public boolean isPalindrome(String s) {
+        s=s.toLowerCase();
         if (s.isEmpty()) {
         	return true;
         }
@@ -12,14 +13,16 @@ class Solution {
         		start++;
         	} else if(!Character.isLetterOrDigit(currLast)) {
         		last--;
-        	} else {
-        		if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)) {
+                
+        	} else{ 
+                if(s.charAt(start)!=s.charAt(last)) 
         			return false;
-        		}
+        		
         		start++;
         		last--;
         	}
         }
+        
         return true;
     }
 }
