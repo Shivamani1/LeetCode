@@ -9,12 +9,9 @@ class Solution {
 
             
         for(int j=0;j<l.size();j++){
-    
-          // System.out.println(l.get(j)+""+map.get(l.get(j)));
-
-         if(!helper(l.get(j),vis,map.get(l.get(j))))
+        int a=l.get(j);
+         if(!helper(a,vis,map.get(a)))
              return false;   
-            if(!l.isEmpty())
              l.remove(0);
         }
         
