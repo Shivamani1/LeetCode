@@ -1,5 +1,6 @@
 class Solution {
     HashMap<Integer,List<Integer>> map=new HashMap();
+    int a;
    boolean helper(int i,boolean[] vis,List<Integer> l){
         if(vis[i])
             return false;   
@@ -9,7 +10,7 @@ class Solution {
 
             
         for(int j=0;j<l.size();j++){
-        int a=l.get(j);
+         a=l.get(j);
          if(!helper(a,vis,map.get(a)))
              return false;   
              l.remove(0);
