@@ -1,6 +1,6 @@
 
 class Solution {
-   List<Integer> fl=new ArrayList();
+   Set<Integer> fl=new LinkedHashSet();
     HashMap<Integer,List<Integer>> map=new HashMap();
     int a;
    boolean helper(int i,boolean[] vis,List<Integer> l){
@@ -51,11 +51,10 @@ class Solution {
             }
         }
          int idx=0;
-     System.out.println(fl); 
             int[] arr=new int[numCourses];
             for(int i=0;i<numCourses;i++){
               if(!fl.contains(i))
-                    fl.addFirst(i); 
+                    fl.add(i); 
             }
                 
             
