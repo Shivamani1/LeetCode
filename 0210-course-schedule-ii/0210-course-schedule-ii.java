@@ -15,7 +15,7 @@ class Solution {
          a=l.get(j);
          if(!helper(a,vis,map.get(a)))
              return false;  
-            if(!fl.contains(l.get(0)))
+            
             fl.add(l.get(0));
              l.remove(0);
             j--;
@@ -46,14 +46,14 @@ class Solution {
             if(map.containsKey(i)){
             if(!helper(i,vis,map.get(i)))
                   return new int[0];
-             if(!fl.contains(i))
+            
                 fl.add(i);
             }
         }
          int idx=0;
             int[] arr=new int[numCourses];
             for(int i=0;i<numCourses;i++){
-              if(!fl.contains(i))
+             
                     fl.add(i); 
             }
                 
