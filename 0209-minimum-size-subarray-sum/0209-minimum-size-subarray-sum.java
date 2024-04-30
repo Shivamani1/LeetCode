@@ -5,7 +5,6 @@ class Solution {
         int min=Integer.MAX_VALUE;
         while(left<=right&&right<nums.length){
             s+=nums[right];
-            System.out.println(s);
             while(s>=target&&left<=right){
                 min=Math.min(min,right-left+1);
                 s-=nums[left];
@@ -13,9 +12,7 @@ class Solution {
             }
             right++;
         }
-        if(min==Integer.MAX_VALUE)
-            return 0;
-        return min;
+        return min==Integer.MAX_VALUE?0:min;
         
     }
 }
