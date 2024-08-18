@@ -15,7 +15,7 @@ class Solution {
             arr[idx++]=nums[k-1];
         else
             arr[idx++]=-1;
-        System.out.print(c);
+        // System.out.print(c);
         for(int i=k;i<nums.length;i++)  {
             if(nums[i]-nums[i-1]==1){
                 if(c<k-1)
