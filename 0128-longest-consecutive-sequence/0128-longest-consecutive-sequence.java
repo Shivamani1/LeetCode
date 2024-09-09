@@ -4,7 +4,7 @@ class Solution {
         int c=1,max=0;
         for(int i:nums)
             s.add(i);
-        for(int i:nums){
+        for(int i:new HashSet<>(s)){
                 if(!s.contains(i-1)){
                     c=0;                          
                 while(s.contains(i+c)){
