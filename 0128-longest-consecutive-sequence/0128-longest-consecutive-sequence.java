@@ -6,14 +6,11 @@ class Solution {
             s.add(i);
         for(int i:nums){
                 if(!s.contains(i-1)){
-                    c=1;                          
+                    c=0;                          
                 while(s.contains(i+c)){
                s.remove(i+c);
                     c++;     
-                }
-                    if(s.contains(i+c))
-                     s.remove(i+c);
-                s.remove(i);    
+                }  
                 }
             max=Math.max(max,c);
         }
