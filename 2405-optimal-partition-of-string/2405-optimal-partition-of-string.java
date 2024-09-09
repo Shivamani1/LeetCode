@@ -5,7 +5,7 @@ class Solution {
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(set.contains(ch)){
-                set=new HashSet();
+                set.clear();
                 c++;
             }
             set.add(ch);
